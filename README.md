@@ -11,6 +11,7 @@ Todo:
 
 * Template for Ubuntu
 * Template which is Specific to Raspberry Pi
+* if-else cascade for **jarvis.sh**
 
 
 ### set-up for mac os x
