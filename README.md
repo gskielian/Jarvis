@@ -3,11 +3,11 @@ Jarvis
 
 Personal Assistant scripts
 
-Done:
+### Done:
 
-* Template for Mac OS X
+* Template for Mac OS X (customize the .sh file as you will)
 
-Todo:
+### Todo:
 
 * Template for Ubuntu
 * Template which is Specific to Raspberry Pi
