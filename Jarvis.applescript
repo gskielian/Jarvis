@@ -1,6 +1,7 @@
 tell application "System Events" to key code 49 using {command down}
 delay 0.3
 tell application "System Events" to keystroke "terminal"
+delay 0.1
 tell application "System Events" to key code 36
 delay 0.3
 tell application "System Events" to keystroke "./jarvis.sh \"\""
