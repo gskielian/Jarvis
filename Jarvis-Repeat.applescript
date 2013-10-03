@@ -1,17 +1,16 @@
 (*Instead of using the spotlight app, this opens a new terminal directly*)
 
 tell application "Terminal"
-	activate
 	
 	(*names currentTab  need to find a more elegant method*)
-	set currentTab to do script ""
 	
 	repeat
-		(*sets up the script for dictation*)
-		tell application "System Events" to keystroke "./jarvis.sh \"\""
-		tell application "System Events" to key code 123
+		set currentTab to do script "~/jarvis.sh"
 		
+		activate currentTab
+		set mainID to id of front window
 		(*opens up speech-to-text*)
+		delay 0.5
 		tell application "System Events" to key code 63
 		tell application "System Events" to key code 63
 		delay 4
@@ -28,13 +27,13 @@ tell application "Terminal"
 		
 		
 		(*closes the terminal when process is completed*)
-		set mainID to id of front window
 		set toggle to 1
 		delay 0.1
-		set thetimeout to 100
+		set thetimeout to 1000
+		
 		repeat until toggle ≥ thetimeout
 			if busy of currentTab is false then
-				(*close (every window whose id = mainID)*)
+				close (every window whose id = mainID)
 				set toggle to thetimeout
 			end if
 			set toggle to (toggle + 1)
