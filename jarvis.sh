@@ -44,6 +44,7 @@ while [ 1 ] ; do
       open "https://www.google.com/#q="$parsed"&safe=active"
     elif [[ "$message" =~ "Play a tune" ]] ; then
       bash play_a_tune.sh &
+      
     fi
   fi
 done
