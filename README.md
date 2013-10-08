@@ -18,7 +18,7 @@ Personal Assistant scripts
 
 1. enable assistive technologies in system preferences
 2. compile the applescript into binary somehow
-3. place `interactive_jarvis.sh` into home folder
+3. place `jarvis.sh` into home folder
 4. place `JarvisCallFromBash.applescript` into the home folder
 5. place `play_a_tune.sh` into the home folder -- give it the location of your music file
 
